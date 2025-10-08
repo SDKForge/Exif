@@ -9,7 +9,7 @@ plugins {
 
 kotlin {
     androidLibrary {
-        namespace = "dev.sdkforge.template.app"
+        namespace = "dev.sdkforge.exif.app"
     }
 
     sourceSets {
