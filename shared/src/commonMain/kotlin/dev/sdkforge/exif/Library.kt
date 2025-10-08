@@ -1,6 +1,6 @@
-package dev.sdkforge.template
+package dev.sdkforge.exif
 
-import dev.sdkforge.template.Library.VERSION
+import dev.sdkforge.exif.Library.VERSION
 
 /**
  * Library metadata and version information.

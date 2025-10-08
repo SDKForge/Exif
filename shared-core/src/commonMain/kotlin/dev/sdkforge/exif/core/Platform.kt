@@ -1,4 +1,4 @@
-package dev.sdkforge.template.core
+package dev.sdkforge.exif.core
 
 /**
  * Platform information interface.
