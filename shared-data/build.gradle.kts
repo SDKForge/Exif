@@ -1,3 +1,5 @@
+import com.android.build.api.dsl.androidLibrary
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
@@ -9,6 +11,10 @@ plugins {
 }
 
 kotlin {
+    androidLibrary {
+        namespace = "dev.sdkforge.exif.data"
+    }
+
     sourceSets {
         commonMain {
             dependencies {
@@ -27,8 +33,4 @@ kotlin {
             }
         }
     }
-}
-
-android {
-    namespace = "dev.sdkforge.exif.data"
 }
