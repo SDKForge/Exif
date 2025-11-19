@@ -21,6 +21,8 @@ kotlin {
 
                 api(compose.foundation)
                 api(compose.material3)
+
+                implementation("com.squareup.okio:okio:3.16.0")
             }
         }
     }
