@@ -1,0 +1,91 @@
+public final class dev/sdkforge/exif/data/Exif {
+	public static final field INSTANCE Ldev/sdkforge/exif/data/Exif;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public final fun parse (Ljava/io/InputStream;)Ldev/sdkforge/exif/data/ExifData;
+	public final fun parse (Lokio/Path;)Ldev/sdkforge/exif/data/ExifData;
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class dev/sdkforge/exif/data/ExifData {
+	public abstract fun getImageHeight ()Ljava/lang/Integer;
+	public abstract fun getImageWidth ()Ljava/lang/Integer;
+	public abstract fun getOrientation ()Ldev/sdkforge/exif/data/Orientation;
+}
+
+public final class dev/sdkforge/exif/data/ExifTag : java/lang/Enum {
+	public static final field IMAGE_DESCRIPTION Ldev/sdkforge/exif/data/ExifTag;
+	public static final field IMAGE_HEIGHT Ldev/sdkforge/exif/data/ExifTag;
+	public static final field IMAGE_ORIENTATION Ldev/sdkforge/exif/data/ExifTag;
+	public static final field IMAGE_WIDTH Ldev/sdkforge/exif/data/ExifTag;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/sdkforge/exif/data/ExifTag;
+	public static fun values ()[Ldev/sdkforge/exif/data/ExifTag;
+}
+
+public abstract interface class dev/sdkforge/exif/data/Orientation {
+}
+
+public final class dev/sdkforge/exif/data/Orientation$Clockwise180 : dev/sdkforge/exif/data/Orientation {
+	public static final field INSTANCE Ldev/sdkforge/exif/data/Orientation$Clockwise180;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/sdkforge/exif/data/Orientation$Clockwise270 : dev/sdkforge/exif/data/Orientation {
+	public static final field INSTANCE Ldev/sdkforge/exif/data/Orientation$Clockwise270;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/sdkforge/exif/data/Orientation$Clockwise90 : dev/sdkforge/exif/data/Orientation {
+	public static final field INSTANCE Ldev/sdkforge/exif/data/Orientation$Clockwise90;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/sdkforge/exif/data/Orientation$FlipHorizontal : dev/sdkforge/exif/data/Orientation {
+	public static final field INSTANCE Ldev/sdkforge/exif/data/Orientation$FlipHorizontal;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/sdkforge/exif/data/Orientation$FlipVertical : dev/sdkforge/exif/data/Orientation {
+	public static final field INSTANCE Ldev/sdkforge/exif/data/Orientation$FlipVertical;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/sdkforge/exif/data/Orientation$Normal : dev/sdkforge/exif/data/Orientation {
+	public static final field INSTANCE Ldev/sdkforge/exif/data/Orientation$Normal;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/sdkforge/exif/data/Orientation$Transpose : dev/sdkforge/exif/data/Orientation {
+	public static final field INSTANCE Ldev/sdkforge/exif/data/Orientation$Transpose;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/sdkforge/exif/data/Orientation$Transverse : dev/sdkforge/exif/data/Orientation {
+	public static final field INSTANCE Ldev/sdkforge/exif/data/Orientation$Transverse;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/sdkforge/exif/data/Orientation$Undefined : dev/sdkforge/exif/data/Orientation {
+	public static final field INSTANCE Ldev/sdkforge/exif/data/Orientation$Undefined;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
