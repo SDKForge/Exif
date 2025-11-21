@@ -1,4 +1,4 @@
-@file:Suppress("ktlint:standard:class-signature")
+@file:Suppress("ktlint:standard:class-signature", "ktlint:standard:blank-line-between-when-conditions")
 @file:OptIn(ExperimentalForeignApi::class)
 
 package dev.sdkforge.exif.data
