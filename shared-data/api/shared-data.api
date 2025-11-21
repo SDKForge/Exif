@@ -2,8 +2,8 @@ public final class dev/sdkforge/exif/data/Exif {
 	public static final field INSTANCE Ldev/sdkforge/exif/data/Exif;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
-	public final fun parse (Ljava/io/InputStream;)Ldev/sdkforge/exif/data/ExifData;
-	public final fun parse (Lokio/Path;)Ldev/sdkforge/exif/data/ExifData;
+	public final fun parse (Landroid/content/Context;Ljava/lang/String;)Ldev/sdkforge/exif/data/ExifData;
+	public final fun parse (Ljava/lang/String;)Ldev/sdkforge/exif/data/ExifData;
 	public fun toString ()Ljava/lang/String;
 }
 
