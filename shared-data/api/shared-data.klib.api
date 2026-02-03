@@ -1,0 +1,92 @@
+// Klib ABI Dump
+// Targets: [iosArm64, iosSimulatorArm64, iosX64]
+// Rendering settings:
+// - Signature version: 2
+// - Show manifest properties: true
+// - Show declarations: true
+
+// Library unique name: <dev.sdkforge.exif:shared-data>
+final enum class dev.sdkforge.exif.data/ExifTag : kotlin/Enum<dev.sdkforge.exif.data/ExifTag> { // dev.sdkforge.exif.data/ExifTag|null[0]
+    enum entry IMAGE_DESCRIPTION // dev.sdkforge.exif.data/ExifTag.IMAGE_DESCRIPTION|null[0]
+    enum entry IMAGE_HEIGHT // dev.sdkforge.exif.data/ExifTag.IMAGE_HEIGHT|null[0]
+    enum entry IMAGE_ORIENTATION // dev.sdkforge.exif.data/ExifTag.IMAGE_ORIENTATION|null[0]
+    enum entry IMAGE_WIDTH // dev.sdkforge.exif.data/ExifTag.IMAGE_WIDTH|null[0]
+
+    final val entries // dev.sdkforge.exif.data/ExifTag.entries|#static{}entries[0]
+        final fun <get-entries>(): kotlin.enums/EnumEntries<dev.sdkforge.exif.data/ExifTag> // dev.sdkforge.exif.data/ExifTag.entries.<get-entries>|<get-entries>#static(){}[0]
+
+    final fun valueOf(kotlin/String): dev.sdkforge.exif.data/ExifTag // dev.sdkforge.exif.data/ExifTag.valueOf|valueOf#static(kotlin.String){}[0]
+    final fun values(): kotlin/Array<dev.sdkforge.exif.data/ExifTag> // dev.sdkforge.exif.data/ExifTag.values|values#static(){}[0]
+}
+
+abstract interface dev.sdkforge.exif.data/ExifData { // dev.sdkforge.exif.data/ExifData|null[0]
+    abstract val imageHeight // dev.sdkforge.exif.data/ExifData.imageHeight|{}imageHeight[0]
+        abstract fun <get-imageHeight>(): kotlin/Int? // dev.sdkforge.exif.data/ExifData.imageHeight.<get-imageHeight>|<get-imageHeight>(){}[0]
+    abstract val imageWidth // dev.sdkforge.exif.data/ExifData.imageWidth|{}imageWidth[0]
+        abstract fun <get-imageWidth>(): kotlin/Int? // dev.sdkforge.exif.data/ExifData.imageWidth.<get-imageWidth>|<get-imageWidth>(){}[0]
+    abstract val orientation // dev.sdkforge.exif.data/ExifData.orientation|{}orientation[0]
+        abstract fun <get-orientation>(): dev.sdkforge.exif.data/Orientation // dev.sdkforge.exif.data/ExifData.orientation.<get-orientation>|<get-orientation>(){}[0]
+}
+
+sealed interface dev.sdkforge.exif.data/Orientation { // dev.sdkforge.exif.data/Orientation|null[0]
+    final object Clockwise180 : dev.sdkforge.exif.data/Orientation { // dev.sdkforge.exif.data/Orientation.Clockwise180|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // dev.sdkforge.exif.data/Orientation.Clockwise180.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // dev.sdkforge.exif.data/Orientation.Clockwise180.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // dev.sdkforge.exif.data/Orientation.Clockwise180.toString|toString(){}[0]
+    }
+
+    final object Clockwise270 : dev.sdkforge.exif.data/Orientation { // dev.sdkforge.exif.data/Orientation.Clockwise270|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // dev.sdkforge.exif.data/Orientation.Clockwise270.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // dev.sdkforge.exif.data/Orientation.Clockwise270.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // dev.sdkforge.exif.data/Orientation.Clockwise270.toString|toString(){}[0]
+    }
+
+    final object Clockwise90 : dev.sdkforge.exif.data/Orientation { // dev.sdkforge.exif.data/Orientation.Clockwise90|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // dev.sdkforge.exif.data/Orientation.Clockwise90.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // dev.sdkforge.exif.data/Orientation.Clockwise90.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // dev.sdkforge.exif.data/Orientation.Clockwise90.toString|toString(){}[0]
+    }
+
+    final object FlipHorizontal : dev.sdkforge.exif.data/Orientation { // dev.sdkforge.exif.data/Orientation.FlipHorizontal|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // dev.sdkforge.exif.data/Orientation.FlipHorizontal.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // dev.sdkforge.exif.data/Orientation.FlipHorizontal.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // dev.sdkforge.exif.data/Orientation.FlipHorizontal.toString|toString(){}[0]
+    }
+
+    final object FlipVertical : dev.sdkforge.exif.data/Orientation { // dev.sdkforge.exif.data/Orientation.FlipVertical|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // dev.sdkforge.exif.data/Orientation.FlipVertical.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // dev.sdkforge.exif.data/Orientation.FlipVertical.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // dev.sdkforge.exif.data/Orientation.FlipVertical.toString|toString(){}[0]
+    }
+
+    final object Normal : dev.sdkforge.exif.data/Orientation { // dev.sdkforge.exif.data/Orientation.Normal|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // dev.sdkforge.exif.data/Orientation.Normal.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // dev.sdkforge.exif.data/Orientation.Normal.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // dev.sdkforge.exif.data/Orientation.Normal.toString|toString(){}[0]
+    }
+
+    final object Transpose : dev.sdkforge.exif.data/Orientation { // dev.sdkforge.exif.data/Orientation.Transpose|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // dev.sdkforge.exif.data/Orientation.Transpose.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // dev.sdkforge.exif.data/Orientation.Transpose.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // dev.sdkforge.exif.data/Orientation.Transpose.toString|toString(){}[0]
+    }
+
+    final object Transverse : dev.sdkforge.exif.data/Orientation { // dev.sdkforge.exif.data/Orientation.Transverse|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // dev.sdkforge.exif.data/Orientation.Transverse.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // dev.sdkforge.exif.data/Orientation.Transverse.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // dev.sdkforge.exif.data/Orientation.Transverse.toString|toString(){}[0]
+    }
+
+    final object Undefined : dev.sdkforge.exif.data/Orientation { // dev.sdkforge.exif.data/Orientation.Undefined|null[0]
+        final fun equals(kotlin/Any?): kotlin/Boolean // dev.sdkforge.exif.data/Orientation.Undefined.equals|equals(kotlin.Any?){}[0]
+        final fun hashCode(): kotlin/Int // dev.sdkforge.exif.data/Orientation.Undefined.hashCode|hashCode(){}[0]
+        final fun toString(): kotlin/String // dev.sdkforge.exif.data/Orientation.Undefined.toString|toString(){}[0]
+    }
+}
+
+final object dev.sdkforge.exif.data/Exif { // dev.sdkforge.exif.data/Exif|null[0]
+    final fun equals(kotlin/Any?): kotlin/Boolean // dev.sdkforge.exif.data/Exif.equals|equals(kotlin.Any?){}[0]
+    final fun hashCode(): kotlin/Int // dev.sdkforge.exif.data/Exif.hashCode|hashCode(){}[0]
+    final fun parse(kotlin/String?): dev.sdkforge.exif.data/ExifData? // dev.sdkforge.exif.data/Exif.parse|parse(kotlin.String?){}[0]
+    final fun toString(): kotlin/String // dev.sdkforge.exif.data/Exif.toString|toString(){}[0]
+}
